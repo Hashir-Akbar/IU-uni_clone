@@ -1,0 +1,98 @@
+.questions {
+  margin-block: 2em;
+  &__card {
+    background: #f5f4f3;
+    padding: 1em;
+    display: flex;
+    width: 90%;
+    margin-inline: auto;
+    align-items: center;
+    border-radius: 8px;
+    gap: 3em;
+
+    @media(max-width:890px){
+      flex-wrap: wrap;
+    }
+  }
+  &__card__img {
+    position: relative;
+    img {
+      border-radius: 7px;
+      width: 100%;
+      object-fit: cover;
+      height: 350px;
+    }
+    .tooltip {
+      position: absolute;
+      top: 67%;
+      // left: 15%;
+      left: -22px;
+      display: flex;
+      flex-direction: column;
+
+      background-color: transparent;
+      gap: .1em;
+      span {
+     text-align: left;
+     font-weight: 600;
+      font-size: 1.4rem;
+        padding: 0.3em 0.7em;
+        background-color: #fff;
+      }
+    }
+  }
+  &__card__content {
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+
+    h3 {
+      font-weight: 700;
+      font-size: 1.3rem;
+    }
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+    margin-top: 1em;
+    
+
+    &__last-span {
+      font-size: 0.8rem;
+      margin-left: 2.5em;
+    }
+  }
+  .contact__details {
+    display: flex;
+    align-items: center;
+    gap: 13em;
+    
+    @media(max-width:634px){
+      flex-wrap: wrap;
+      gap: 1em;
+      
+    }
+  }
+  .call {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+flex-wrap: wrap;
+    span {
+      font-size: 1.05rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-decoration: underline;
+    }
+    &__img {
+      display: flex;
+      // flex-direction: ;
+      gap: 1em;
+      align-items: center;
+      @media(max-width:519px){
+        margin-left: 2em;
+      }
+    }
+  }
+}

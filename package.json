@@ -1,0 +1,20 @@
+{
+  "name": "iu_university_website_clone",
+  "version": "1.0.0",
+  "description": "Cloning for practicing HTML,CSS and SASS",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass scss:public/css --style compressed --watch"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "SASS"
+  ],
+  "author": "Hashir Akbar",
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.68.0"
+  }
+}

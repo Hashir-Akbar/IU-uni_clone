@@ -1,0 +1,46 @@
+.partners {
+  @media (max-width: 450px) {
+    font-size: 0.8rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-block: 2em;
+    text-align: center;
+    @media (max-width: 450px) {
+      font-size: 1.5rem;
+    }
+  }
+  &__cards {
+    width: 80%;
+    padding: 1em;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    @media (max-width: 920px) {
+      flex-wrap: wrap;
+      align-items: center;
+      margin-inline: auto;
+      padding: 0;
+    }
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    text-align: justify;
+    padding: 3em 1em;
+    background: #f5f4f3;
+    border-radius: 8px;
+    @media (max-width: 920px) {
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 1em;
+    }
+    p {
+      max-width: 370px;
+    }
+  }
+}

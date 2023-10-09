@@ -1,0 +1,160 @@
+.programmes {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  // width: 90%;
+
+  padding: 3em;
+  background: #f5f4f3;
+  @media (max-width: 450px) {
+    font-size: 0.8rem;
+  }
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    @media (max-width: 450px) {
+      font-size: 1.5rem;
+    }
+  }
+  &__tabs {
+    position: relative;
+  }
+
+  &__tabs input {
+    position: absolute;
+    height: 0;
+
+    // visibility: hidden;
+    appearance: none;
+
+    &:checked + label {
+      color: black;
+      border-bottom: 4px solid #3767ff;
+      font-weight: 700;
+    }
+
+    // &:checked #bachelor-1 {
+    //   display: block;
+    // }
+  }
+
+  &__tabs label {
+    padding: 1em 2em 0.3em 2em;
+    cursor: pointer;
+
+    &:hover {
+      color: #3767ff;
+    }
+  }
+  .item__cards {
+    margin: 1em auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+
+    @media (max-width: 1072px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 560px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  .item {
+    display: none;
+  }
+  &__tabs input#bachelor:checked ~ .bachelor {
+    display: block;
+  }
+}
+
+.item__card {
+  position: relative;
+}
+.tooltip {
+  position: absolute;
+  top: 70%;
+  left: 0px;
+
+  font-size: 1.125rem;
+  background-color: white;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0.5em 1.2em;
+  transition: 200ms all ease-in-out;
+  &:hover {
+    background: #000;
+    color: white;
+  }
+
+  .item__card__tooltip {
+    position: absolute;
+    top: -150px;
+    left: 177px;
+    // max-width: 400px;
+    width: 150%;
+    display: none;
+    opacity: 0;
+    z-index: 999;
+    background: white;
+    padding: 1em;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 1.7;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+    @media (max-width: 560px) {
+      width: 100%;
+      font-size: 0.8rem;
+    }
+    > :nth-child(n):not(h2) {
+      margin-top: 1em;
+    }
+    p.tooltip-p {
+      font-weight: 300;
+      font-size: 0.9rem;
+    }
+    ul {
+      list-style-position: inside;
+    }
+    transition: 220ms all ease-in-out;
+
+    &-overflow {
+      right: 177px;
+      left: initial;
+      @media (max-width: 560px) {
+        right: initial;
+        left: 177px;
+      }
+      @media (max-width: 1072px) {
+        // grid-template-columns: repeat(2, 1fr);
+        right: initial;
+        left: 177px;
+      }
+    }
+  }
+
+  &:hover > .item__card__tooltip {
+    display: block;
+    opacity: 1;
+    color: black;
+  }
+}
+.item__btn {
+  text-align: center;
+  margin-block: 2em;
+  a {
+    background: #3767ff;
+    color: white;
+    padding: 0.4em 0.7em;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+  }
+}
+.item__text p {
+  text-align: center;
+  font-weight: 700;
+  margin-top: 1em;
+}

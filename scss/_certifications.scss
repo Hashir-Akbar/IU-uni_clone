@@ -1,0 +1,50 @@
+.certification {
+  width: 90%;
+  margin: 4em auto;
+
+  h2 {
+    @include h2;
+    text-align: left;
+    background-color: #ffa73a;
+    padding: 0.2em 0.7em;
+    font-weight: 600;
+    color: black;
+    font-size: 2rem;
+    width: max-content;
+  }
+  &__images {
+    margin: 1em auto;
+    display: flex;
+    justify-content: space-between;
+
+    @media(max-width:955px){
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  &__img {
+    position: relative;
+    cursor: pointer;
+
+    span {
+      position: absolute;
+      top: 0;
+      text-align: center;
+    //   display: none;
+    opacity: 0;
+    transition: 200ms all ease-in-out;
+      a{
+        // text-decoration: underline;
+        color: black;
+      }
+    }
+
+    &:hover img{
+        opacity: 0;
+    }
+    &:hover span {
+    //   display: block;
+    opacity: 1;
+    }
+  }
+}
