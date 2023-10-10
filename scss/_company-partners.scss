@@ -1,6 +1,8 @@
 .company__partners {
-  width: 80%;
+  width: 100%;
   margin-inline: auto;
+  padding: 1.2em;
+
   margin-block-start: 1em;
 
   @media (max-width: 450px) {
@@ -10,6 +12,7 @@
     font-size: 2.5rem;
     font-weight: 700;
     //   margin-top: ;
+    margin-block: 1em;
     @media (max-width: 1116px) {
       text-align: center;
     }
@@ -59,7 +62,8 @@
     display: flex;
     gap: 3em;
 
-    @media (max-width:1124px) {
+    justify-content: space-between;
+    @media (max-width: 1124px) {
       flex-wrap: wrap;
       justify-content: center;
     }
@@ -67,12 +71,33 @@
   &__card {
     display: flex;
     flex-direction: column;
+    background: #f5f4f3;
+    padding: 1.2em;
+    border-radius: 8px;
+    @include button();
     ul {
       list-style-position: inside;
     }
     img {
       width: 550px;
       height: 100%;
+      border-radius: 10px;
+    }
+  }
+  &__card-content {
+    margin-top: -3em;
+    margin-left: 0.5em;
+
+    @media (max-width: 1124px) {
+      margin-top: 0;
+      margin-left: 0;
+    }
+    h2 {
+      font-weight: 600;
+      font-size: 1.7rem;
+      background: #ffa73a;
+      padding: 0.1em 0.7em;
+      width: max-content;
     }
   }
 }

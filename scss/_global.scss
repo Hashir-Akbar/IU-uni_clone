@@ -3,6 +3,15 @@ body {
   font-family: "Source Sans 3", sans-serif;
   scroll-behavior: smooth;
 }
-.bold{
+.bold {
   font-weight: 700;
+}
+main,
+.footer,
+.footer__social,
+.footer__copyright {
+  max-width: 1260px;
+  width: 100%;
+
+  margin-inline: auto;
 }

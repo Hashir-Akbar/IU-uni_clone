@@ -65,6 +65,12 @@
   &__tabs input#bachelor:checked ~ .bachelor {
     display: block;
   }
+  &__tabs input#mba:checked ~ .mba {
+    display: block;
+  }
+  &__tabs input#master:checked ~ .master {
+    display: block;
+  }
 }
 
 .item__card {

@@ -1,5 +1,5 @@
 .certification {
-  width: 90%;
+  width: 100%;
   margin: 4em auto;
 
   h2 {
@@ -13,11 +13,14 @@
     width: max-content;
   }
   &__images {
-    margin: 1em auto;
+    margin: 3em auto;
     display: flex;
     justify-content: space-between;
-
-    @media(max-width:955px){
+    img {
+      width: 100%;
+      height: 70px;
+    }
+    @media (max-width: 955px) {
       flex-wrap: wrap;
       justify-content: center;
     }
@@ -28,23 +31,26 @@
 
     span {
       position: absolute;
-      top: 0;
+      top: 50%;
+      left: 50%;
+      translate: -50% -50%;
       text-align: center;
-    //   display: none;
-    opacity: 0;
-    transition: 200ms all ease-in-out;
-      a{
+      //   display: none;
+      opacity: 0;
+      transition: 200ms all ease-in-out;
+      width: 170px;
+      a {
         // text-decoration: underline;
         color: black;
       }
     }
 
-    &:hover img{
-        opacity: 0;
+    &:hover img {
+      opacity: 0;
     }
     &:hover span {
-    //   display: block;
-    opacity: 1;
+      //   display: block;
+      opacity: 1;
     }
   }
 }

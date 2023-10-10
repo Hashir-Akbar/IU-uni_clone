@@ -107,6 +107,7 @@
       cursor: pointer;
       opacity: 0;
     }
+
     &-main {
       position: absolute;
       top: 0;
@@ -114,6 +115,7 @@
       height: 15px;
       width: 15px;
       margin-top: 0.1em;
+      border-radius: 100%;
       background-color: #b6b6b6;
       @media (max-width: 450px) {
         margin-top: 0.2em;
@@ -124,6 +126,18 @@
     }
     input:checked ~ label {
       background-color: #2196f3;
+
+      &::after {
+        content: " ";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        width: 9px;
+        height: 9px;
+        border-radius: 100%;
+        background: #ccc;
+      }
     }
   }
 }
