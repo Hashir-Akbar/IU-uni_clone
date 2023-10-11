@@ -6,7 +6,7 @@ body {
 .bold {
   font-weight: 700;
 }
-main,
+section:not(.main-scholarship, .stripe, .programmes, .form, .students),
 .footer,
 .footer__social,
 .footer__copyright {

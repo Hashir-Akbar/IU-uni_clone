@@ -2,12 +2,18 @@
   display: flex;
   flex-direction: column;
   gap: 1em;
-  // width: 90%;
+  width: 100%;
 
   padding: 3em;
   background: #f5f4f3;
   @media (max-width: 450px) {
     font-size: 0.8rem;
+  }
+  .main-programmes-div {
+    max-width: 1260px;
+    width: 100%;
+
+    margin-inline: auto;
   }
   h2 {
     font-size: 2rem;
