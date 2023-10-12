@@ -81,6 +81,23 @@
 
 .item__card {
   position: relative;
+  &:hover {
+    cursor: pointer;
+    .tooltip:nth-child(even) {
+      background: #575ee0;
+      color: white;
+    }
+    .tooltip:nth-child(odd) {
+      background: #e057cb;
+      color: white;
+    }
+  }
+
+  img {
+    &:hover {
+      filter: brightness(1.17);
+    }
+  }
 }
 .tooltip {
   position: absolute;
@@ -93,10 +110,10 @@
   cursor: pointer;
   padding: 0.5em 1.2em;
   transition: 200ms all ease-in-out;
-  &:hover {
-    background: #000;
-    color: white;
-  }
+  // &:hover {
+  //   background: #000;
+  //   color: white;
+  // }
 
   .item__card__tooltip {
     position: absolute;
@@ -134,6 +151,7 @@
 
     &-overflow {
       right: 177px;
+
       left: initial;
       @media (max-width: 560px) {
         right: initial;
@@ -144,6 +162,9 @@
         right: initial;
         left: 177px;
       }
+    }
+    &-overflow-2 {
+      right: 205px;
     }
   }
 
@@ -163,6 +184,7 @@
     text-decoration: none;
     display: inline-block;
     border-radius: 5px;
+    font-weight: 600;
   }
 }
 .item__text p {

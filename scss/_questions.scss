@@ -10,7 +10,7 @@
     border-radius: 8px;
     gap: 3em;
 
-    @media(max-width:890px){
+    @media (max-width: 890px) {
       flex-wrap: wrap;
     }
   }
@@ -31,11 +31,11 @@
       flex-direction: column;
 
       background-color: transparent;
-      gap: .1em;
+      gap: 0.1em;
       span {
-     text-align: left;
-     font-weight: 600;
-      font-size: 1.4rem;
+        text-align: left;
+        font-weight: 600;
+        font-size: 1.4rem;
         padding: 0.3em 0.7em;
         background-color: #fff;
       }
@@ -56,7 +56,10 @@
     flex-direction: column;
     gap: 0.6em;
     margin-top: 1em;
-    
+
+    a {
+      color: black;
+    }
 
     &__last-span {
       font-size: 0.8rem;
@@ -67,18 +70,17 @@
     display: flex;
     align-items: center;
     gap: 13em;
-    
-    @media(max-width:634px){
+
+    @media (max-width: 634px) {
       flex-wrap: wrap;
       gap: 1em;
-      
     }
   }
   .call {
     display: flex;
     align-items: center;
     gap: 1em;
-flex-wrap: wrap;
+    flex-wrap: wrap;
     span {
       font-size: 1.05rem;
       font-weight: 700;
@@ -90,7 +92,7 @@ flex-wrap: wrap;
       // flex-direction: ;
       gap: 1em;
       align-items: center;
-      @media(max-width:519px){
+      @media (max-width: 519px) {
         margin-left: 2em;
       }
     }

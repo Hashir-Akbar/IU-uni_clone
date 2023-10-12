@@ -3,6 +3,12 @@
   display: flex;
   padding: 1em 0;
 
+  .main_hero {
+    max-width: 1260px;
+    width: 100%;
+
+    margin-inline: auto;
+  }
   @media (max-width: 1088px) {
     flex-wrap: wrap;
     padding: auto;
@@ -33,7 +39,7 @@
   &__right {
     overflow: visible;
     img {
-      max-width: 47vw;
+      max-width: 50vw;
       width: 100vw;
       object-fit: cover;
       overflow: visible;
@@ -104,15 +110,19 @@
 
   &__left__search input {
     width: 90%;
-    padding: 0.5em;
+    padding-block: 0.7em;
+    padding-inline: 0.5em;
+
     border: 2px solid #3767ff;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
 
     &:focus {
       outline: none;
     }
   }
   &__left__search button {
-    padding: 0.69em;
+    padding: 0.9em;
     // justify-content: center;
     text-align: center;
     border-radius: 0;
@@ -120,11 +130,17 @@
     border-bottom-right-radius: 6px;
     background: #3767ff;
     border: none;
-    @media (max-width: 680px) {
-      padding: 0.66em;
+    @media (max-width: 1160px) {
+      padding: 0.87em;
     }
-    @media (max-width: 426px) {
-      padding: 0.69em;
+    @media (max-width: 670px) {
+      padding: 0.89em;
+    }
+    @media (max-width: 590px) {
+      padding: 0.88em;
+    }
+    @media (max-width: 366px) {
+      padding: 0.89em;
     }
 
     img {
@@ -147,7 +163,7 @@
   }
   &__left__recommend__text {
     padding-left: 1em;
-    border-left: 1px solid black;
+    border-left: 1px solid #cccfca;
     display: flex;
     font-weight: bold;
     font-size: 0.9rem;

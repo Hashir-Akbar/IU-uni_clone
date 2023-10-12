@@ -1,18 +1,17 @@
 .global {
   width: 100%;
   margin-inline: auto;
-  margin-bottom: 4em;
+  margin-bottom: 1em;
 
-  @media(max-width:450px){
-    font-size: .8rem;
+  @media (max-width: 450px) {
+    font-size: 0.8rem;
   }
   h2 {
     @include h2();
-    margin-block: 2em;
-    @media(max-width:450px){
+    margin-block: 1.5em;
+    @media (max-width: 450px) {
       font-size: 1.5rem;
     }
-
   }
   &__cards {
     // width: 80%;

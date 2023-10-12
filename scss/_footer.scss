@@ -21,11 +21,11 @@ footer {
   padding-block: 3em;
   border-bottom: 1px solid #fff;
 
-  @media(max-width:850px){
+  @media (max-width: 850px) {
     grid-template-columns: repeat(2, 1fr);
     gap: 4em;
   }
-  @media(max-width:462px){
+  @media (max-width: 462px) {
     grid-template-columns: repeat(1, 1fr);
     gap: 2em;
   }
@@ -33,7 +33,6 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    
 
     h3 {
       font-weight: 600;
@@ -44,9 +43,10 @@ footer {
 .footer__social {
   display: flex;
   justify-content: space-between;
-  margin-block: 1em;
-gap: 1em;
-flex-wrap: wrap;
+  margin-top: 3em;
+  margin-bottom: 1em;
+  gap: 1em;
+  flex-wrap: wrap;
   div {
     display: flex;
     gap: 1em;

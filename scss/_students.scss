@@ -51,7 +51,9 @@
 
     p {
       text-align: center;
-      max-width: 200px;
+      padding: 1em;
+      font-size: 1.2rem;
+      color: #2e2e30;
       @media (max-width: 851px) {
         max-width: 300px;
       }
@@ -82,6 +84,8 @@
   a {
     color: black;
     text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
 
     &:hover {
       opacity: 0.8;
