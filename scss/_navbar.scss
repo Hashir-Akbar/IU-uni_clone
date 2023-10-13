@@ -71,7 +71,6 @@
     display: flex;
     gap: 0.1em;
     align-items: center;
-    
   }
   &__buttons {
     display: flex;
@@ -122,7 +121,8 @@
   &__tooltip__bachelor,
   &__tooltip__master,
   &__tooltip__mba,
-  &__tooltip__about {
+  &__tooltip__about,
+  &__tooltip__campus {
     visibility: hidden;
     // transition: 20s all ease;
     &::before {
@@ -156,6 +156,11 @@
       visibility: visible;
     }
   }
+  &__link__campus {
+    &:hover .navbar__tooltip__campus {
+      visibility: visible;
+    }
+  }
 
   &__tooltip {
     position: absolute;
@@ -163,8 +168,11 @@
     // transform: translateX(-50%);
     cursor: initial;
     top: 65px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    box-shadow: 1px 30px 22px 14px rgba(255, 255, 255, 0);
+    -webkit-box-shadow: 1px 30px 22px 14px rgba(255, 255, 255, 0);
+    -moz-box-shadow: 1px 30px 22px 14px rgba(255, 255, 255, 0);
     padding: 2em 2.3em;
+    border-radius: 7px;
     background: white;
   }
 
