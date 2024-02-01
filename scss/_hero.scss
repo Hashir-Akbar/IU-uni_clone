@@ -1,12 +1,12 @@
 .hero {
   background: #fff8ef;
   display: flex;
-  padding: 1em 0;
+  padding-top: 1em ;
 
   .main_hero {
     max-width: 1260px;
     width: 100%;
-
+background: transparent;
     margin-inline: auto;
   }
   @media (max-width: 1088px) {
@@ -37,20 +37,23 @@
   }
 
   &__right {
-    overflow: visible;
+    // overflow: visible;
     img {
-      max-width: 50vw;
-      width: 100vw;
-      object-fit: cover;
-      overflow: visible;
+      // max-width: 50vw;
+      width: 100%;
 
-      min-height: 600px;
+  
+      overflow: visible;
+      object-fit: cover;
+      height: 97%;
+      // min-height: ;
 
       @media (max-width: 942px) {
         max-width: 900px;
         margin-inline: auto;
         object-fit: contain;
-        min-height: auto;
+        height: 100%;
+        max-height: 96%;
       }
     }
   }

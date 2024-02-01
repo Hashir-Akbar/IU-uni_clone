@@ -25,6 +25,7 @@
       align-items: center;
       margin-inline: auto;
       padding: 0;
+      justify-content: center;
     }
   }
   &__card {
@@ -39,6 +40,7 @@
       flex-wrap: wrap;
       align-items: center;
       padding: 1em;
+
     }
     p {
       max-width: 370px;

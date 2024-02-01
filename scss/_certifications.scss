@@ -1,5 +1,5 @@
 .certification {
-  width: 100%;
+  // width: 100%;
   margin: 4em auto;
 
   h2 {
@@ -10,12 +10,17 @@
     font-weight: 600;
     color: black;
     font-size: 2rem;
-    width: max-content;
+
+     @media (max-width:600px){
+      padding: .4em;
+     }
+
   }
   &__images {
-    margin: 3em auto;
+    margin: 3em ;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 1em;
     img {
       width: 100%;
       height: 70px;
